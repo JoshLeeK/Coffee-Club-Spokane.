@@ -1,6 +1,6 @@
 body {
     max-width: 100%;
-}
+}  
 .logo {
     max-width: 250px;
     padding-left: 25px;
@@ -39,9 +39,12 @@ li {
 #boxes {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    overflow: hidden;
+    align-content: center;
 }
 
 .flex-item {
@@ -51,16 +54,19 @@ li {
     text-align: center;
     font-size: 24px;
     padding-top: 50px;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .footer {
     text-align: center;
-    margin-top: 500px;
+    margin-top: 100%;
 }
 
 .intro {
     text-align: center;
-    width: 500px;
+    width: 100%;
     padding-top: 50px;
     margin: auto;
 }
@@ -76,66 +82,12 @@ li {
     margin: 25px;
   }
 
-  #quiz-button {
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 30px;
-    width: 75%;
-    height: 80px;
-    font-family:'Libre Franklin', sans-serif;
-    font-size: 33px;
-    transition-duration: 0.4s;
-    border: 0px;
-  }
-
-  #quiz-button:hover {
-    background-color: black;
-    color: white;
-  }
-
-  #spokane-pav {
-    width: 500px;
-    height: auto;
-  }
-
   #spokane-pav-cont{
     margin: auto;
     text-align: center;
-  }
-
-.coffee-list {
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 80px;
-    font-family:'Libre Franklin', sans-serif;
-    font-size: 33px;
-    transition-duration: 0.4s;
-    border: 0px;
 }
 
-.coffee-list:hover {
-    background-color: black;
-    color: white;
-}
-
-.recipe-list {
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 80px;
-    font-family:'Libre Franklin', sans-serif;
-    font-size: 33px;
-    transition-duration: 0.4s;
-    border: 0px;
-}
-
-.recipe-list:hover {
+.btn:hover {
     background-color: black;
     color: white;
 }
@@ -146,8 +98,58 @@ li {
 
 #aero {
     margin-top: 60px;
+    background-color: white;
 }
 
 a {
     text-decoration: none;
 }
+
+#leftbox {
+    background-color: #777163 ;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#middlebox {
+    background-color: #636f84 ;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#rightbox {
+    background-color: #f2efe9 ;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 75%;
+    height: 80px;
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 28px;
+    transition-duration: 0.4s;
+    border: 0px;
+    background-color: white;
+    border-radius: 25px;
+    padding-top: 5px;
+}
+#quiz-button {
+    margin-top: 30px;
+}
+
+/*.pp {
+    padding: 0px 50px;
+}*/
+
+@media screen and (max-width:500px) {
+    #boxes { flex-direction: column;  }
+   #leftbox { flex-basis: 100%; }
+   .flex-item { width: 100%; padding-bottom: 50px }
+   body {padding: 15px;}
+  }
