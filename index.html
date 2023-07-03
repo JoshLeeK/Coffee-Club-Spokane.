@@ -11,41 +11,74 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
     </head>
-    <div class="main">
+    <body>
     <header>
         <div class="header-block" id="header-block">
-        <img class="logo" id="logo" src="Assets/logo.png"> 
-       
-    </div>
-    </header>
-    <body>
+            <img class="logo" id="logo" src="Assets/logo.png"> 
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+              </ul>
+        </div>
         <div class="intro"><h2 id="title" class="title">We are dedicated to helping you find delicious coffee and good vibes in our city.</h2>
         </div>
         <hr>
-        <div id = "boxes">            
-            <div class="flex-item" id = "leftbox">
-                <h2>Quiz</h2>
-                Take our coffee quiz to find your next favorite coffee shop!
-              <a href="https://0x6bxkqilha.typeform.com/to/Jy7WTv7S"><button class="btn" id="quiz-button">Quiz</button></a>
-            </div>
-             
-            <div class="flex-item" id = "middlebox">
-                <h2>Sip</h2>
-                Our list of the best coffee shops in Spokane.
-                <button id="arctos" class="btn">Arctos</button>
-                <button id="indaba" class="btn">Indaba</button>
-                <button id="ladder" class="btn">Ladder Coffee Roasters</button>
-            </div>
-             
-            <div class="flex-item" id = "rightbox">
-                <h2>Make</h2>
-                <p class="pp">Recipes that you can make at home.</p>
-                <a href="https://aeroprecipe.com/recipes/james-hoffmann-aeropress-recipe"> <button id="aero" class="btn">Aeropress</button></a>
-            </div>
+    </header>
+        <div class="card-box">
+            <!-- Arctos Card -->
+            <div class="card arctos">
+                <div class="content">
+                  <div class="front">
+                    <img class="card-image arctos" src="Assets/arctos.png">
+                    <h3 class="card-title">Arctos Coffee Roasters</h3>
+                  </div>
+                  <div class="back">
+                    <h4 class="card-back">Arctos is near Gonzaga and is a favorite location for students</h4>
+                    <p class="card-back-p">The warm vibes encourage productive studying or a meangingful chat with friends. The coffee is no joke either.</p>
+                    <p class="card-back-p">Located in the Logan Neighborhood, Arctos is accesible to most of Spokane.</p>
+                    <a href="https://www.arctoscoffee.com"><button type="button" class="card-button">Click here to go to their website</button></a>
+                    <img class="card-image" src="">
+                  </div>
+                </div>
+              </div>
+              <!-- Indaba Card -->
+              <div class="card indaba">
+                <div class="content">
+                  <div class="front">
+                    <img class="card-image" src="Assets/indaba - riverside.png">
+                    <h3 class="card-title">Indaba Coffee Roasters</h3>
+                  </div>
+                  <div class="back">
+                    <h4 class="card-back">Indaba Coffee Roasters is one of the premier coffee roasters in Spokane!</h4>
+                    <p class="card-back-p">Known for their community engagement and friendly staff, Indaba is beloved by many coffee lovers in the city.</p>
+                    <p class="card-back-p">With 3 locations (and a fourth on the way), Indaba has a cozy table for you!</p>
+                    <a href="https://www.indabacoffee.com/"><button type="button" class="card-button">Click here to go to their website</button></a>
+                    <!-- <img class="card-image" src="Assets/indaba-summit.png"> -->
+                  </div>
+                </div>
+              </div>
+              <!-- Rocket Bakery card -->
+              <div class="card ????">
+                <div class="content">
+                  <div class="front">
+                    Front
+                  </div>
+                  <div class="back">
+                    Back!
+                  </div>
+                </div>
+              </div>
+              <div class="card ????">
+                <div class="content">
+                  <div class="front">
+                    Front
+                  </div>
+                  <div class="back">
+                    Back!
+                </div>
+              </div>
         </div>
-    </body>
-<footer class="footer">
-</footer>
-    <script src="main.js" async defer></script>
-</div>
+        </body>
 </html>

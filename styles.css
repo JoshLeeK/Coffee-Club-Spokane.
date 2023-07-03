@@ -1,12 +1,39 @@
-body {
-    max-width: 100%;
-}  
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+    background: rgb(157,157,157);
+background: linear-gradient(326deg, rgba(157,157,157,1) 0%, rgba(227,227,227,1) 75%, rgba(255,255,255,1) 100%);
+  }
+
 .logo {
     max-width: 250px;
-    padding-left: 25px;
-    padding-top: 25px;
-    display: inline;
+    display: inline-block;
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 10px;
 }
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  li {
+    display: inline-block;
+    color: #000;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 18px;
+  }
 
 h1 {
     font-family: 'Libre Franklin', sans-serif;
@@ -18,138 +45,154 @@ h2 {
     text-align: center;
 }
 
-.header-block {
-    text-align: left;
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center; 
 }
 
-#btn {
-    font-family:'Libre Franklin', sans-serif;
+p {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    font-size: 16px;  
 }
 
-ul {
-    list-style-type: none;
-    margin: 5;
-    padding: 0;
-      }
+/* header {
+    background-image: url("Assets/IMG_20230608_144446_983.jpg");
+} */
 
-li {
-    margin: 5px;
-}
-
-#boxes {
+.card-box {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
-    overflow: hidden;
-    align-content: center;
-}
-
-.flex-item {
-    width: 30%;
-    height: auto;
-    font-family:'Libre Franklin', sans-serif;
-    text-align: center;
-    font-size: 24px;
-    padding-top: 50px;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 100%;
-}
-
-.intro {
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    margin: auto;
-}
-
-.boxes {
-    display: flex;
-  }
-  .boxes > div {
-    flex: 1; /*grow*/
-  }
-
-  hr {
-    margin: 25px;
-  }
-
-  #spokane-pav-cont{
-    margin: auto;
-    text-align: center;
-}
-
-.btn:hover {
-    background-color: black;
-    color: white;
-}
-
-#arctos {
-    margin-top: 30px;
-}
-
-#aero {
-    margin-top: 60px;
-    background-color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-#leftbox {
-    background-color: #777163 ;
-    border-radius: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-#middlebox {
-    background-color: #636f84 ;
-    border-radius: 25px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-#rightbox {
-    background-color: #f2efe9 ;
-    border-radius: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.btn {
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 80px;
-    font-family:'Libre Franklin', sans-serif;
-    font-size: 28px;
-    transition-duration: 0.4s;
+    flex-flow: row;
+    background-color: transparent;
     border: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.card {
+  width: 25%;
+  height: 500px;
+  margin: 25px;
+  perspective: 500px;
+  border-radius: 5px;
+      grid-template-rows: 210px 250px 20px;
+  }
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(157,157,157);
+background: linear-gradient(326deg, rgba(157,157,157,1) 0%, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front {
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 36px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-back {
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-back-p {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.back {
+    background: rgb(157,157,157);
+    background: linear-gradient(126deg, rgba(157,157,157,1) 0%, rgba(0,0,0,1) 100%);
+  color: white;
+  transform: rotateY( 180deg );
+  border-radius: 5px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+.card-image.arctos {
+    width: 50%;
+    padding-top: 10px;
+    height: auto;
+}
+
+.title {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+  margin-right: auto;
+    max-width: 33%;
+}
+ a {
+    text-decoration: none;
+    margin: auto;
+    padding: 5px;
+    color: black;
+ }
+button {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
     background-color: white;
-    border-radius: 25px;
-    padding-top: 5px;
-}
-#quiz-button {
+    transition-duration: 0.4s;
     margin-top: 30px;
+    margin-bottom: 30px
 }
 
-/*.pp {
-    padding: 0px 50px;
-}*/
+button:hover {
+    background-color: black ; /* Green */
+    color: white;
+  }
 
-@media screen and (max-width:500px) {
-    #boxes { flex-direction: column;  }
-   #leftbox { flex-basis: 100%; }
+  #indaba-logo {
+    padding-top: 10%;
+    max-width: 75%;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width:1000px) {
+    .card-box { flex-direction: column;  }
+   /* .arctos { flex-basis: 100%; } */
    .flex-item { width: 100%; padding-bottom: 50px }
-   body {padding: 15px;}
+   .card {width: auto;}
   }
