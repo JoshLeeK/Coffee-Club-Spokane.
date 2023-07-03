@@ -6,8 +6,9 @@ background: linear-gradient(326deg, rgba(157,157,157,1) 0%, rgba(227,227,227,1) 
 
 .logo {
     max-width: 250px;
-    display: inline-block;
+    display: block;
   width: 50%;
+  height: auto;
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -195,4 +196,6 @@ button:hover {
    /* .arctos { flex-basis: 100%; } */
    .flex-item { width: 100%; padding-bottom: 50px }
    .card {width: auto;}
+   ul {display:none;}
+   .title {max-width: 75%;}
   }
