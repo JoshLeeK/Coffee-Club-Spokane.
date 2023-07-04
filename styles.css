@@ -85,15 +85,16 @@ p {
 
 .card-box {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     background-color: transparent;
     border: 0px;
     margin: 0px;
     border-radius: 5px;
+
 }
 
 .card {
-  width: 25%;
+  width: 30%;
   height: 500px;
   margin: 25px;
   perspective: 500px;
@@ -182,6 +183,7 @@ background: linear-gradient(326deg, rgba(157,157,157,1) 0%, rgba(227,227,227,1) 
     margin-left: auto;
   margin-right: auto;
     max-width: 33%;
+    font-size: 38px;
 }
  a {
     text-decoration: none;
@@ -307,7 +309,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: bottom;
+  align-items: flex-end;
   overflow: hidden;
 }
 .facts {
